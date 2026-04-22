@@ -30,6 +30,7 @@ export default function DachisolierungPage() {
   return (
     <ServicePageTemplate
       title="Dachisolierung & Wärmedämmung"
+      slug="dachisolierung"
       description="Energieeffiziente Wärmedämmung für Ihr Dach – sparen Sie Heizkosten und schützen Sie die Umwelt mit moderner Isolierung vom Fachmann."
       heroImage="/images/img-20250729-wa0056-1.jpg"
       benefits={benefits}

@@ -30,6 +30,7 @@ export default function SchornsteinPage() {
   return (
     <ServicePageTemplate
       title="Schornstein & Kaminverkleidung"
+      slug="schornstein"
       description="Schornsteinsanierung, professionelle Verkleidung und zuverlässige Abdichtung für sicheren und effizienten Betrieb Ihrer Heizungsanlage."
       heroImage="/images/22.jpg"
       benefits={benefits}
@@ -42,7 +43,7 @@ export default function SchornsteinPage() {
           <p className="mt-4 leading-relaxed text-muted-foreground">
             Der Schornstein ist ein wichtiges Element Ihres Daches – er muss
             zuverlässig funktionieren und gegen Witterungseinflüsse geschützt sein.
-            Bei Dach Service 24 Plus kümmern wir uns um alle Arbeiten rund um
+            Bei Dachbau Pro kümmern wir uns um alle Arbeiten rund um
             den Schornstein.
           </p>
           <h3 className="mt-8 text-lg font-semibold text-foreground">

@@ -30,6 +30,7 @@ export default function DachfensterPage() {
   return (
     <ServicePageTemplate
       title="Dachfenster & Lichtkuppeln"
+      slug="dachfenster"
       description="Einbau und Austausch von Dachfenstern namhafter Hersteller für mehr natürliches Licht und bessere Belüftung in Ihrem Dachgeschoss."
       heroImage="/images/img-20250729-wa0053-1.jpg"
       benefits={benefits}
@@ -41,7 +42,7 @@ export default function DachfensterPage() {
           </h2>
           <p className="mt-4 leading-relaxed text-muted-foreground">
             Dachfenster verwandeln dunkle Dachräume in helle, freundliche
-            Wohnbereiche. Bei Dach Service 24 Plus installieren wir Dachfenster
+            Wohnbereiche. Bei Dachbau Pro installieren wir Dachfenster
             aller führenden Hersteller – fachgerecht und mit zuverlässiger
             Abdichtung.
           </p>

@@ -30,6 +30,7 @@ export default function AbdichtungPage() {
   return (
     <ServicePageTemplate
       title="Abdichtung & Hydroisolation"
+      slug="abdichtung"
       description="Hochwertige Dachabdichtung und Hydroisolation für langfristigen Schutz vor Feuchtigkeit und Wasserschäden an Flachdächern, Balkonen und Terrassen."
       heroImage="/images/img-20250729-wa0057-1.jpg"
       benefits={benefits}
@@ -41,7 +42,7 @@ export default function AbdichtungPage() {
           </h2>
           <p className="mt-4 leading-relaxed text-muted-foreground">
             Eine fachgerechte Abdichtung ist entscheidend für den Schutz Ihres
-            Gebäudes vor Feuchtigkeit und Wasserschäden. Bei Dach Service 24 Plus
+            Gebäudes vor Feuchtigkeit und Wasserschäden. Bei Dachbau Pro
             bieten wir Ihnen professionelle Abdichtungslösungen für alle
             Anforderungen.
           </p>

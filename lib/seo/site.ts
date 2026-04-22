@@ -1,0 +1,41 @@
+// Central site constants used by metadata, JSON-LD, sitemap, OG image, and UI.
+export const SITE = {
+  name: 'Dachbau Pro',
+  legalName: 'Dachbau Pro',
+  url: 'https://dachservice24plus.de',
+  locale: 'de-DE',
+  ogLocale: 'de_DE',
+  phone: '+49 163 4679816',
+  phoneHref: 'tel:+491634679816',
+  email: 'dachservice24plus@gmail.com',
+  address: {
+    street: 'Industriestraße 68',
+    postalCode: '50389',
+    city: 'Wesseling',
+    country: 'DE',
+  },
+  geo: {
+    latitude: 50.8269,
+    longitude: 6.9744,
+  },
+  areaServed: [
+    'Wesseling',
+    'Köln',
+    'Bonn',
+    'Brühl',
+    'Hürth',
+    'Frechen',
+    'Pulheim',
+    'Bergheim',
+    'Erftstadt',
+    'Troisdorf',
+    'Siegburg',
+    'Bornheim',
+  ],
+  openingHours: {
+    days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'] as const,
+    opens: '07:00',
+    closes: '18:00',
+  },
+  logo: '/full-logo-gherman.png',
+} as const;

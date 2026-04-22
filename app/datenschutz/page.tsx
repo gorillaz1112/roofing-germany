@@ -1,5 +1,4 @@
 import type { Metadata } from "next"
-import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { WhatsAppButton } from "@/components/whatsapp-button"
@@ -7,7 +6,7 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 export const metadata: Metadata = {
   title: "Datenschutzerklärung",
   description:
-    "Datenschutzerklärung von Dach Service 24 Plus. Informationen zur Erhebung und Verarbeitung personenbezogener Daten.",
+    "Datenschutzerklärung von Dachbau Pro. Informationen zur Erhebung und Verarbeitung personenbezogener Daten.",
   alternates: {
     canonical: "/datenschutz",
   },
@@ -22,9 +21,20 @@ export default function DatenschutzPage() {
     <>
       <Header />
       <main>
-        <section className="bg-secondary py-16 md:py-24">
+        <section className="relative isolate overflow-hidden bg-secondary py-16 text-secondary-foreground md:py-20">
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-0 -z-10 bg-grid-red opacity-70"
+          />
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-0 -z-10 bg-[linear-gradient(180deg,rgb(15_13_13/0.35)_0%,rgb(15_13_13/0.9)_100%)]"
+          />
           <div className="mx-auto max-w-7xl px-4">
-            <h1 className="text-3xl font-bold tracking-tight text-secondary-foreground md:text-4xl">
+            <span className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-primary-foreground">
+              Rechtliches
+            </span>
+            <h1 className="mt-6 font-display text-h1 font-bold tracking-tight md:text-hero">
               Datenschutzerklärung
             </h1>
           </div>
@@ -58,7 +68,7 @@ export default function DatenschutzPage() {
               <p className="mt-2 text-muted-foreground">
                 Die Datenverarbeitung auf dieser Website erfolgt durch den
                 Websitebetreiber. Dessen Kontaktdaten können Sie dem Abschnitt
-                „Hinweis zur Verantwortlichen Stelle" in dieser Datenschutzerklärung
+                „Hinweis zur Verantwortlichen Stelle&ldquo; in dieser Datenschutzerklärung
                 entnehmen.
               </p>
 
@@ -151,7 +161,7 @@ export default function DatenschutzPage() {
                 Website ist:
               </p>
               <address className="mt-4 not-italic text-muted-foreground">
-                <p className="font-semibold text-foreground">Dach Service 24 Plus</p>
+                <p className="font-semibold text-foreground">Dachbau Pro</p>
                 <p>Industriestraße 68</p>
                 <p>50389 Wesseling</p>
                 <p className="mt-2">
@@ -263,14 +273,46 @@ export default function DatenschutzPage() {
               </p>
 
               <h2 className="mt-8 text-xl font-semibold text-foreground">
-                5. Analyse-Tools und Werbung
+                5. Analyse-Tools und Reichweitenmessung
               </h2>
+              <h3 className="mt-6 text-lg font-semibold text-foreground">
+                Vercel Analytics
+              </h3>
               <p className="mt-4 text-muted-foreground">
-                Diese Website nutzt Vercel Analytics zur statistischen Auswertung der
-                Besucherzugriffe. Vercel Analytics ist ein datenschutzfreundliches
-                Analyse-Tool, das keine persönlichen Daten speichert und keine Cookies
-                verwendet. Weitere Informationen finden Sie in der
-                Datenschutzerklärung von Vercel.
+                Diese Website nutzt Vercel Analytics zur statistischen
+                Auswertung der Besucherzugriffe. Vercel Analytics ist ein
+                datenschutzfreundliches Analyse-Tool, das keine persönlichen
+                Daten speichert und keine Cookies verwendet. Weitere
+                Informationen finden Sie in der Datenschutzerklärung von
+                Vercel.
+              </p>
+              <h3 className="mt-6 text-lg font-semibold text-foreground">
+                Umami Analytics
+              </h3>
+              <p className="mt-4 text-muted-foreground">
+                Zusätzlich setzen wir Umami Analytics ein – eine
+                datenschutzfreundliche, cookielose Reichweitenmessung. Umami
+                erhebt ausschließlich anonyme und aggregierte Statistiken
+                (z. B. Seitenaufrufe, Gerätetyp, ungefähre Herkunftsregion).
+                Es werden{' '}
+                <strong>keine Cookies gesetzt</strong>, keine IP-Adressen
+                vollständig gespeichert und kein Tracking über mehrere
+                Websites hinweg durchgeführt. Eine Identifikation einzelner
+                Nutzer ist nicht möglich. Die Verarbeitung erfolgt auf
+                Grundlage unseres berechtigten Interesses an der Analyse und
+                Verbesserung des Website-Angebots (Art. 6 Abs. 1 lit. f
+                DSGVO). Da Umami keine personenbezogenen Daten verarbeitet,
+                ist nach § 25 Abs. 1 TTDSG keine Einwilligung erforderlich.
+                Weitere Informationen:{' '}
+                <a
+                  href="https://umami.is/docs/faq"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary hover:underline"
+                >
+                  https://umami.is
+                </a>
+                .
               </p>
 
               <h2 className="mt-8 text-xl font-semibold text-foreground">
@@ -281,7 +323,7 @@ export default function DatenschutzPage() {
                 Übertragung vertraulicher Inhalte, wie zum Beispiel Anfragen, die Sie
                 an uns als Seitenbetreiber senden, eine SSL- bzw. TLS-Verschlüsselung.
                 Eine verschlüsselte Verbindung erkennen Sie daran, dass die
-                Adresszeile des Browsers von "http://" auf "https://" wechselt und an
+                Adresszeile des Browsers von &bdquo;http://&ldquo; auf &bdquo;https://&ldquo; wechselt und an
                 dem Schloss-Symbol in Ihrer Browserzeile.
               </p>
               <p className="mt-2 text-muted-foreground">

@@ -39,6 +39,7 @@ export default function DachreparaturPage() {
   return (
     <ServicePageTemplate
       title="Dachreparatur"
+      slug="dachreparatur"
       description="Schnelle und zuverlässige Reparaturen bei Sturmschäden, Undichtigkeiten und altersbedingtem Verschleiß. Wir sind Ihr Partner für alle Dachreparaturen."
       heroImage="/images/img-20250729-wa0054-1.jpg"
       benefits={benefits}
@@ -51,7 +52,7 @@ export default function DachreparaturPage() {
           </h2>
           <p className="mt-4 leading-relaxed text-muted-foreground">
             Ein beschädigtes Dach kann schnell zu größeren Problemen führen –
-            von Wasserschäden bis hin zu Schimmelbildung. Bei Dach Service 24 Plus
+            von Wasserschäden bis hin zu Schimmelbildung. Bei Dachbau Pro
             reagieren wir schnell und zuverlässig auf alle Arten von Dachschäden.
           </p>
           <h3 className="mt-8 text-lg font-semibold text-foreground">

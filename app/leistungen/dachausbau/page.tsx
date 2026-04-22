@@ -30,6 +30,7 @@ export default function DachausbauPage() {
   return (
     <ServicePageTemplate
       title="Dachausbau & Mansarden"
+      slug="dachausbau"
       description="Schaffen Sie neuen Wohnraum durch professionelle Mansardenausbauten und Dachgeschossausbau mit optimaler Raumausnutzung und hochwertiger Ausführung."
       heroImage="/images/whatsapp-image-2025-07-29-at-19.jpg"
       benefits={benefits}
@@ -42,7 +43,7 @@ export default function DachausbauPage() {
           <p className="mt-4 leading-relaxed text-muted-foreground">
             Ein Dachausbau bietet die perfekte Möglichkeit, zusätzlichen Wohnraum
             zu schaffen, ohne die Grundfläche Ihres Hauses zu vergrößern. Bei
-            Dach Service 24 Plus planen und realisieren wir Ihren Dachausbau
+            Dachbau Pro planen und realisieren wir Ihren Dachausbau
             von Anfang bis Ende.
           </p>
           <h3 className="mt-8 text-lg font-semibold text-foreground">

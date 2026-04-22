@@ -30,6 +30,7 @@ export default function DachentwaesserungPage() {
   return (
     <ServicePageTemplate
       title="Dachentwässerung & Regenrinnen"
+      slug="dachentwaesserung"
       description="Installation und Wartung von Regenrinnen, Fallrohren und kompletten Entwässerungssystemen für optimalen Wasserabfluss und Schutz Ihrer Fassade."
       heroImage="/images/img-20250729-wa0066-1.jpg"
       benefits={benefits}
@@ -41,7 +42,7 @@ export default function DachentwaesserungPage() {
           </h2>
           <p className="mt-4 leading-relaxed text-muted-foreground">
             Eine gut funktionierende Dachentwässerung schützt Ihr Gebäude vor
-            Wasserschäden an Dach, Fassade und Fundament. Bei Dach Service 24 Plus
+            Wasserschäden an Dach, Fassade und Fundament. Bei Dachbau Pro
             installieren und warten wir komplette Entwässerungssysteme.
           </p>
           <h3 className="mt-8 text-lg font-semibold text-foreground">

@@ -30,6 +30,7 @@ export default function ZimmereiPage() {
   return (
     <ServicePageTemplate
       title="Zimmerei & Holzbau"
+      slug="zimmerei"
       description="Fachgerechte Holzkonstruktionen, Dachstühle, Sparrenwechsel und Tragwerkserneuerung vom erfahrenen Zimmermannsteam für Ihr Bauvorhaben."
       heroImage="/images/img-20250729-wa0060-1.jpg"
       benefits={benefits}

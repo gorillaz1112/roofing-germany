@@ -40,6 +40,7 @@ export default function DachmontageePage() {
   return (
     <ServicePageTemplate
       title="Dachmontage"
+      slug="dachmontage"
       description="Professionelle Neueindeckung und komplette Dachkonstruktion für Neubauten und Sanierungen. Wir verwenden ausschließlich Premium-Dachziegel und Materialien führender deutscher Hersteller für ein Dach, das Generationen hält."
       heroImage="/images/img-20250729-wa0055-1.jpg"
       benefits={benefits}
@@ -52,7 +53,7 @@ export default function DachmontageePage() {
           </h2>
           <p className="mt-4 leading-relaxed text-muted-foreground">
             Eine professionelle Dachmontage ist die Grundlage für ein sicheres und
-            langlebiges Dach. Bei Dach Service 24 Plus bieten wir Ihnen
+            langlebiges Dach. Bei Dachbau Pro bieten wir Ihnen
             umfassende Dacheindeckungsarbeiten für Neubauten sowie komplette
             Dachsanierungen – immer mit dem Anspruch höchster Qualität und unter 
             Verwendung erstklassiger Materialien.
