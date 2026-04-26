@@ -12,7 +12,7 @@ import { breadcrumbJsonLd, jsonLdScript } from '@/lib/seo/jsonld';
 export const metadata: Metadata = {
   title: 'Kontakt',
   description:
-    'Kontaktieren Sie Dachbau Pro in Wesseling. Telefon +49 163 4679816, E-Mail, Adresse und Öffnungszeiten. Kostenlose Beratung und Angebote für alle Dacharbeiten in Wesseling, Köln und Bonn.',
+    'Kontaktieren Sie Dachbau Pro in Wesseling. Telefon 0178 2482183, E-Mail, Adresse und Öffnungszeiten. Kostenlose Beratung und Angebote für alle Dacharbeiten in Wesseling, Köln und Bonn.',
   alternates: { canonical: '/kontakt' },
   other: {
     // Preconnect Google Maps only on the page that actually embeds it
@@ -293,7 +293,7 @@ export default function KontaktPage() {
                 WhatsApp – wir antworten so schnell wie möglich.
               </p>
               <a
-                href="https://wa.me/491634679816?text=Hallo!%20Ich%20interessiere%20mich%20für%20Ihre%20Dachdeckerleistungen.%20Können%20Sie%20mir%20bitte%20ein%20Angebot%20machen?"
+                href="https://wa.me/491782482183?text=Hallo!%20Ich%20interessiere%20mich%20für%20Ihre%20Dachdeckerleistungen.%20Können%20Sie%20mir%20bitte%20ein%20Angebot%20machen?"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-8 inline-flex items-center gap-3 rounded-xl bg-[#25D366] px-8 py-4 text-lg font-semibold text-white shadow-lg transition-transform hover:scale-105"

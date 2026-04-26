@@ -30,7 +30,7 @@ import {
 export const metadata: Metadata = {
   title: 'Dach-Notdienst 24/7 Wesseling & Köln – Sturmschaden Sofort-Hilfe',
   description:
-    'Dach undicht? Sturmschaden? Unser 24/7 Dach-Notdienst ist in Wesseling, Köln, Bonn und Umgebung in 60–90 Min. vor Ort. Sofort anrufen: +49 163 4679816.',
+    'Dach undicht? Sturmschaden? Unser 24/7 Dach-Notdienst ist in Wesseling, Köln, Bonn und Umgebung in 60–90 Min. vor Ort. Sofort anrufen: 0178 2482183.',
   alternates: { canonical: '/notfall' },
   openGraph: {
     title: 'Dach-Notdienst 24/7 Wesseling & Köln',

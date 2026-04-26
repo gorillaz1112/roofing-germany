@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import Image from 'next/image';
+import Link from "next/link";
+import Image from "next/image";
 import {
   Phone,
   Menu,
@@ -7,45 +7,45 @@ import {
   Clock,
   Siren,
   ArrowRight,
-} from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { NavLink } from '@/components/nav-link';
+} from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { NavLink } from "@/components/nav-link";
 import {
   Sheet,
   SheetContent,
   SheetTrigger,
   SheetClose,
   SheetTitle,
-} from '@/components/ui/sheet';
+} from "@/components/ui/sheet";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu';
-import { SITE } from '@/lib/seo/site';
+} from "@/components/ui/dropdown-menu";
+import { SITE } from "@/lib/seo/site";
 
 // Single source of truth for services nav
 const services = [
-  { name: 'Alle Leistungen', href: '/leistungen' },
-  { name: 'Dachmontage', href: '/leistungen/dachmontage' },
-  { name: 'Dachreparatur', href: '/leistungen/dachreparatur' },
-  { name: 'Abdichtung', href: '/leistungen/abdichtung' },
-  { name: 'Zimmerei', href: '/leistungen/zimmerei' },
-  { name: 'Dachentwässerung', href: '/leistungen/dachentwaesserung' },
-  { name: 'Dachausbau', href: '/leistungen/dachausbau' },
-  { name: 'Dachisolierung', href: '/leistungen/dachisolierung' },
-  { name: 'Dachfenster', href: '/leistungen/dachfenster' },
-  { name: 'Schornstein', href: '/leistungen/schornstein' },
+  { name: "Alle Leistungen", href: "/leistungen" },
+  { name: "Dachmontage", href: "/leistungen/dachmontage" },
+  { name: "Dachreparatur", href: "/leistungen/dachreparatur" },
+  { name: "Abdichtung", href: "/leistungen/abdichtung" },
+  { name: "Zimmerei", href: "/leistungen/zimmerei" },
+  { name: "Dachentwässerung", href: "/leistungen/dachentwaesserung" },
+  { name: "Dachausbau", href: "/leistungen/dachausbau" },
+  { name: "Dachisolierung", href: "/leistungen/dachisolierung" },
+  { name: "Dachfenster", href: "/leistungen/dachfenster" },
+  { name: "Schornstein", href: "/leistungen/schornstein" },
 ];
 
 const navLinks = [
-  { name: 'Startseite', href: '/' },
-  { name: 'Über uns', href: '/ueber-uns' },
-  { name: 'Notfall', href: '/notfall' },
-  { name: 'Kontakt', href: '/kontakt' },
-  { name: 'Impressum', href: '/impressum' },
-  { name: 'Datenschutz', href: '/datenschutz' },
+  { name: "Startseite", href: "/" },
+  { name: "Über uns", href: "/ueber-uns" },
+  { name: "Notfall", href: "/notfall" },
+  { name: "Kontakt", href: "/kontakt" },
+
+  { name: "Datenschutz", href: "/datenschutz" },
 ];
 
 export function Header() {
@@ -91,7 +91,7 @@ export function Header() {
           className="relative z-50 flex shrink-0 items-center"
         >
           <Image
-            src="/full-logo-gherman.png"
+            src="/images/de-logo.png"
             alt="Dachbau Pro Dachdeckermeister Wesseling"
             width={260}
             height={96}
@@ -134,7 +134,10 @@ export function Header() {
           </DropdownMenu>
 
           <NavLink href="/ueber-uns">Über uns</NavLink>
-          <NavLink href="/notfall" className="text-primary hover:text-primary-deep">
+          <NavLink
+            href="/notfall"
+            className="text-primary hover:text-primary-deep"
+          >
             <Siren className="mr-1 h-3.5 w-3.5" aria-hidden="true" />
             Notfall
           </NavLink>
@@ -167,7 +170,10 @@ export function Header() {
             </Button>
           </SheetTrigger>
 
-          <SheetContent side="right" className="w-full max-w-sm overflow-y-auto">
+          <SheetContent
+            side="right"
+            className="w-full max-w-sm overflow-y-auto"
+          >
             <SheetTitle className="sr-only">Navigationsmenü</SheetTitle>
 
             <div className="flex flex-col gap-6 pt-6">
@@ -178,7 +184,10 @@ export function Header() {
                   className="flex items-center justify-between rounded-xl bg-primary px-4 py-3 text-primary-foreground shadow-[var(--shadow-brand-sm)]"
                 >
                   <span className="flex items-center gap-2 font-semibold">
-                    <Siren className="h-5 w-5 animate-pulse" aria-hidden="true" />
+                    <Siren
+                      className="h-5 w-5 animate-pulse"
+                      aria-hidden="true"
+                    />
                     24h Dach-Notdienst
                   </span>
                   <ArrowRight className="h-4 w-4" aria-hidden="true" />
@@ -196,7 +205,10 @@ export function Header() {
                       className="flex items-center justify-between rounded-lg px-3 py-2.5 text-base font-medium text-foreground transition-colors hover:bg-primary/10 hover:text-primary"
                     >
                       {link.name}
-                      <ArrowRight className="h-4 w-4 opacity-40" aria-hidden="true" />
+                      <ArrowRight
+                        className="h-4 w-4 opacity-40"
+                        aria-hidden="true"
+                      />
                     </Link>
                   </SheetClose>
                 ))}

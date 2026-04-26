@@ -5,8 +5,8 @@ export const SITE = {
   url: 'https://dachservice24plus.de',
   locale: 'de-DE',
   ogLocale: 'de_DE',
-  phone: '+49 163 4679816',
-  phoneHref: 'tel:+491634679816',
+  phone: '0178 2482183',
+  phoneHref: 'tel:+491782482183',
   email: 'dachservice24plus@gmail.com',
   address: {
     street: 'Industriestraße 68',

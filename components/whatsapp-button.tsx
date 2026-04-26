@@ -1,7 +1,7 @@
 import Link from "next/link"
 
 export function WhatsAppButton() {
-  const phoneNumber = "491634679816"
+  const phoneNumber = "491782482183"
   const message = encodeURIComponent(
     "Hallo! Ich interessiere mich für Ihre Dachdeckerleistungen. Können Sie mir bitte ein Angebot machen?"
   )

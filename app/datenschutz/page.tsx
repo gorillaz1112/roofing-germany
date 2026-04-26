@@ -166,8 +166,8 @@ export default function DatenschutzPage() {
                 <p>50389 Wesseling</p>
                 <p className="mt-2">
                   Telefon:{" "}
-                  <a href="tel:+491634679816" className="text-primary hover:underline">
-                    +49 163 4679816
+                  <a href="tel:+491782482183" className="text-primary hover:underline">
+                    0178 2482183
                   </a>
                 </p>
                 <p>
