@@ -1,31 +1,31 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import { Phone, Mail, MapPin, Siren, ArrowUpRight } from 'lucide-react';
-import { SITE } from '@/lib/seo/site';
+import Link from "next/link";
+import Image from "next/image";
+import { Phone, Mail, MapPin, Siren, ArrowUpRight } from "lucide-react";
+import { SITE } from "@/lib/seo/site";
 
 const services = [
-  { name: 'Dachmontage', href: '/leistungen/dachmontage' },
-  { name: 'Dachreparatur', href: '/leistungen/dachreparatur' },
-  { name: 'Abdichtung', href: '/leistungen/abdichtung' },
-  { name: 'Zimmerei', href: '/leistungen/zimmerei' },
-  { name: 'Dachentwässerung', href: '/leistungen/dachentwaesserung' },
-  { name: 'Dachausbau', href: '/leistungen/dachausbau' },
-  { name: 'Dachisolierung', href: '/leistungen/dachisolierung' },
-  { name: 'Dachfenster', href: '/leistungen/dachfenster' },
-  { name: 'Schornstein', href: '/leistungen/schornstein' },
+  { name: "Dachmontage", href: "/leistungen/dachmontage" },
+  { name: "Dachreparatur", href: "/leistungen/dachreparatur" },
+  { name: "Abdichtung", href: "/leistungen/abdichtung" },
+  { name: "Zimmerei", href: "/leistungen/zimmerei" },
+  { name: "Dachentwässerung", href: "/leistungen/dachentwaesserung" },
+  { name: "Dachausbau", href: "/leistungen/dachausbau" },
+  { name: "Dachisolierung", href: "/leistungen/dachisolierung" },
+  { name: "Dachfenster", href: "/leistungen/dachfenster" },
+  { name: "Schornstein", href: "/leistungen/schornstein" },
 ];
 
 const quickLinks = [
-  { name: 'Startseite', href: '/' },
-  { name: 'Über uns', href: '/ueber-uns' },
-  { name: 'Leistungen', href: '/leistungen' },
-  { name: 'Notfall 24/7', href: '/notfall' },
-  { name: 'Kontakt', href: '/kontakt' },
+  { name: "Startseite", href: "/" },
+  { name: "Über uns", href: "/ueber-uns" },
+  { name: "Leistungen", href: "/leistungen" },
+  { name: "Notfall 24/7", href: "/notfall" },
+  { name: "Kontakt", href: "/kontakt" },
 ];
 
 const legalLinks = [
-  { name: 'Impressum', href: '/impressum' },
-  { name: 'Datenschutz', href: '/datenschutz' },
+  { name: "Impressum", href: "/impressum" },
+  { name: "Datenschutz", href: "/datenschutz" },
 ];
 
 export function Footer() {
@@ -121,20 +121,10 @@ export function Footer() {
               <ul className="space-y-3">
                 <li>
                   <a
-                    href={`https://maps.google.com/?q=${encodeURIComponent(`${SITE.address.street}, ${SITE.address.postalCode} ${SITE.address.city}`)}`}
-                    target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-start gap-3 text-sm text-secondary-foreground/80 transition-colors hover:text-primary"
                   >
-                    <MapPin
-                      className="mt-0.5 h-4 w-4 shrink-0 text-primary"
-                      aria-hidden="true"
-                    />
-                    <span>
-                      {SITE.address.street}
-                      <br />
-                      {SITE.address.postalCode} {SITE.address.city}
-                    </span>
+                    Otto-Hahn-Straße 30 50354 Hürth
                   </a>
                 </li>
                 <li>

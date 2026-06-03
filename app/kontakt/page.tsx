@@ -1,62 +1,60 @@
-import type { Metadata } from 'next';
-import { Header } from '@/components/header';
-import { Footer } from '@/components/footer';
-import { WhatsAppButton } from '@/components/whatsapp-button';
-import { Reveal } from '@/components/motion/reveal';
-import { StaggerGrid, StaggerItem } from '@/components/motion/stagger-grid';
-import { HoverCard } from '@/components/motion/hover-card';
-import { Phone, Mail, MapPin, Clock, Siren, MessageCircle } from 'lucide-react';
-import { SITE } from '@/lib/seo/site';
-import { breadcrumbJsonLd, jsonLdScript } from '@/lib/seo/jsonld';
+import type { Metadata } from "next";
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
+import { WhatsAppButton } from "@/components/whatsapp-button";
+import { Reveal } from "@/components/motion/reveal";
+import { StaggerGrid, StaggerItem } from "@/components/motion/stagger-grid";
+import { HoverCard } from "@/components/motion/hover-card";
+import { Phone, Mail, MapPin, Clock, Siren, MessageCircle } from "lucide-react";
+import { SITE } from "@/lib/seo/site";
+import { breadcrumbJsonLd, jsonLdScript } from "@/lib/seo/jsonld";
 
 export const metadata: Metadata = {
-  title: 'Kontakt',
+  title: "Kontakt",
   description:
-    'Kontaktieren Sie Dachbau Pro in Wesseling. Telefon 0178 2482183, E-Mail, Adresse und Öffnungszeiten. Kostenlose Beratung und Angebote für alle Dacharbeiten in Wesseling, Köln und Bonn.',
-  alternates: { canonical: '/kontakt' },
+    "Kontaktieren Sie Dachbau Pro in Wesseling. Telefon 0178 2482183, E-Mail, Adresse und Öffnungszeiten.",
+  alternates: { canonical: "/kontakt" },
   other: {
     // Preconnect Google Maps only on the page that actually embeds it
-    'link:preconnect': 'https://www.google.com',
+    "link:preconnect": "https://www.google.com",
   },
 };
 
 const contactInfo = [
   {
     icon: Phone,
-    title: 'Telefon',
+    title: "Telefon",
     content: SITE.phone,
     href: SITE.phoneHref,
-    description: 'Schnelle telefonische Beratung',
+    description: "Schnelle telefonische Beratung",
   },
   {
     icon: Mail,
-    title: 'E-Mail',
+    title: "E-Mail",
     content: SITE.email,
     href: `mailto:${SITE.email}`,
-    description: 'Antwort innerhalb 24 Stunden',
+    description: "Antwort innerhalb 24 Stunden",
   },
   {
     icon: MapPin,
-    title: 'Adresse',
-    content: `${SITE.address.street}, ${SITE.address.postalCode} ${SITE.address.city}`,
-    href: `https://maps.google.com/?q=${encodeURIComponent(
-      `${SITE.address.street}, ${SITE.address.postalCode} ${SITE.address.city}`,
-    )}`,
-    description: 'Unser Standort',
+    title: "Adresse",
+    content: "Otto-Hahn-Straße 30, 50354 Hürth",
+    href: "https://maps.google.com/?q=Otto-Hahn-Straße%2030,%2050354%20Hürth",
+    description: "Unser Standort",
   },
   {
     icon: Clock,
-    title: 'Öffnungszeiten',
-    content: 'Mo–Fr: 07:00–18:00 Uhr',
+    title: "Öffnungszeiten",
+    content: "Mo–Fr: 07:00–18:00 Uhr",
     href: null,
-    description: 'Notdienst 24/7',
+    description: "Notdienst 24/7",
   },
 ];
 
 export default function KontaktPage() {
   const breadcrumbs = breadcrumbJsonLd([
-    { name: 'Startseite', url: '/' },
-    { name: 'Kontakt', url: '/kontakt' },
+    { name: "Startseite", url: "/" },
+    { name: "Kontakt", url: "/kontakt" },
   ]);
 
   return (
@@ -87,15 +85,15 @@ export default function KontaktPage() {
             </Reveal>
             <Reveal delay={0.08}>
               <h1 className="mt-6 max-w-3xl text-balance font-display text-h1 font-bold leading-[1.08] tracking-tight md:text-hero">
-                Nehmen Sie <span className="text-gradient-brand">Kontakt</span>{' '}
+                Nehmen Sie <span className="text-gradient-brand">Kontakt</span>{" "}
                 auf
               </h1>
             </Reveal>
             <Reveal delay={0.15}>
               <p className="mt-6 max-w-2xl text-lead leading-relaxed text-secondary-foreground/85">
-                Haben Sie Fragen oder benötigen Sie ein Angebot? Wir beraten
-                Sie gerne persönlich und unverbindlich – telefonisch, per
-                E-Mail oder direkt vor Ort.
+                Haben Sie Fragen oder benötigen Sie ein Angebot? Wir beraten Sie
+                gerne persönlich und unverbindlich – telefonisch, per E-Mail
+                oder direkt vor Ort.
               </p>
             </Reveal>
           </div>
@@ -128,10 +126,12 @@ export default function KontaktPage() {
                       {item.href ? (
                         <a
                           href={item.href}
-                          target={item.href.startsWith('http') ? '_blank' : undefined}
+                          target={
+                            item.href.startsWith("http") ? "_blank" : undefined
+                          }
                           rel={
-                            item.href.startsWith('http')
-                              ? 'noopener noreferrer'
+                            item.href.startsWith("http")
+                              ? "noopener noreferrer"
                               : undefined
                           }
                           className="block h-full"
@@ -167,16 +167,16 @@ export default function KontaktPage() {
                   <div className="mt-8 space-y-6">
                     {[
                       {
-                        title: 'Kostenlose Anfahrt',
-                        body: 'In Wesseling und Umgebung ist die Anfahrt kostenlos. Wir kommen zu Ihnen und beraten direkt vor Ort.',
+                        title: "Kostenlose Anfahrt",
+                        body: "In Wesseling und Umgebung ist die Anfahrt kostenlos. Wir kommen zu Ihnen und beraten direkt vor Ort.",
                       },
                       {
-                        title: 'Unverbindliches Angebot',
-                        body: 'Nach der Besichtigung erhalten Sie ein detailliertes Angebot – transparent und ohne versteckte Kosten.',
+                        title: "Unverbindliches Angebot",
+                        body: "Nach der Besichtigung erhalten Sie ein detailliertes Angebot – transparent und ohne versteckte Kosten.",
                       },
                       {
-                        title: 'Schnelle Reaktion',
-                        body: 'Wir antworten in der Regel innerhalb von 24 Stunden und vereinbaren zeitnah einen Termin.',
+                        title: "Schnelle Reaktion",
+                        body: "Wir antworten in der Regel innerhalb von 24 Stunden und vereinbaren zeitnah einen Termin.",
                       },
                     ].map((card) => (
                       <div
@@ -186,7 +186,9 @@ export default function KontaktPage() {
                         <h3 className="font-semibold text-foreground">
                           {card.title}
                         </h3>
-                        <p className="mt-2 text-muted-foreground">{card.body}</p>
+                        <p className="mt-2 text-muted-foreground">
+                          {card.body}
+                        </p>
                       </div>
                     ))}
                   </div>
@@ -229,8 +231,8 @@ export default function KontaktPage() {
                           24/7 Dach-Notdienst
                         </h3>
                         <p className="mt-1 text-sm text-muted-foreground">
-                          Bei Sturmschaden oder undichtem Dach erreichen Sie
-                          uns rund um die Uhr unter{' '}
+                          Bei Sturmschaden oder undichtem Dach erreichen Sie uns
+                          rund um die Uhr unter{" "}
                           <a
                             href={SITE.phoneHref}
                             className="font-semibold text-primary hover:underline"
@@ -259,14 +261,14 @@ export default function KontaktPage() {
             <Reveal delay={0.1}>
               <div className="mt-8 overflow-hidden rounded-2xl border border-border shadow-xl">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.5!2d6.9744!3d50.8269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bf235d3c0aa8ed%3A0x4f8d6f6c8a8b8b8b!2sIndustriestraße%2068%2C%2050389%20Wesseling!5e0!3m2!1sde!2sde!4v1234567890"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2518.4696292012128!2d6.892620815932607!3d50.89819807167908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bf236ff04940a1%3A0x9c0a3ebc4c7d8d44!2sOtto-Hahn-Stra%C3%9Fe%2030%2C%2050354%20H%C3%BCrth!5e0!3m2!1sde!2sde!4v1717585369000"
                   width="100%"
                   height="450"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Standort Dachbau Pro in Wesseling"
+                  title="Standort Dachbau Pro in Hürth"
                   className="w-full"
                 />
               </div>

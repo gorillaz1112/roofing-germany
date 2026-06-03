@@ -1,15 +1,15 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import { Header } from '@/components/header';
-import { Footer } from '@/components/footer';
-import { WhatsAppButton } from '@/components/whatsapp-button';
-import { Button } from '@/components/ui/button';
-import { Reveal } from '@/components/motion/reveal';
-import { StaggerGrid, StaggerItem } from '@/components/motion/stagger-grid';
-import { HoverCard } from '@/components/motion/hover-card';
-import { AnimatedNumber } from '@/components/motion/animated-number';
-import { Faq } from '@/components/sections/faq';
-import { NotfallStrip } from '@/components/sections/notfall-strip';
+import Link from "next/link";
+import Image from "next/image";
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
+import { WhatsAppButton } from "@/components/whatsapp-button";
+import { Button } from "@/components/ui/button";
+import { Reveal } from "@/components/motion/reveal";
+import { StaggerGrid, StaggerItem } from "@/components/motion/stagger-grid";
+import { HoverCard } from "@/components/motion/hover-card";
+import { AnimatedNumber } from "@/components/motion/animated-number";
+import { Faq } from "@/components/sections/faq";
+import { NotfallStrip } from "@/components/sections/notfall-strip";
 import {
   Phone,
   Mail,
@@ -24,142 +24,142 @@ import {
   Sparkles,
   Users,
   Home as HomeIcon,
-} from 'lucide-react';
-import { SITE } from '@/lib/seo/site';
+} from "lucide-react";
+import { SITE } from "@/lib/seo/site";
 
 const services = [
   {
-    title: 'Dachmontage',
+    title: "Dachmontage",
     description:
-      'Professionelle Neueindeckung und komplette Dachkonstruktion für Neubauten und Sanierungen – mit Premium-Dachziegeln von Braas, Creaton und Nelskamp.',
-    href: '/leistungen/dachmontage',
-    image: '/images/img-20250729-wa0055-1.jpg',
+      "Professionelle Neueindeckung und komplette Dachkonstruktion für Neubauten und Sanierungen – mit Premium-Dachziegeln von Braas, Creaton und Nelskamp.",
+    href: "/leistungen/dachmontage",
+    image: "/images/img-20250729-wa0055-1.jpg",
   },
   {
-    title: 'Dachreparatur',
+    title: "Dachreparatur",
     description:
-      'Schnelle und zuverlässige Reparaturen bei Sturmschäden, Undichtigkeiten und Verschleiß. Wir identifizieren die Ursache präzise und reparieren langfristig.',
-    href: '/leistungen/dachreparatur',
-    image: '/images/img-20250729-wa0054-1.jpg',
+      "Schnelle und zuverlässige Reparaturen bei Sturmschäden, Undichtigkeiten und Verschleiß. Wir identifizieren die Ursache präzise und reparieren langfristig.",
+    href: "/leistungen/dachreparatur",
+    image: "/images/img-20250729-wa0054-1.jpg",
   },
   {
-    title: 'Abdichtung',
+    title: "Abdichtung",
     description:
-      'Hochwertige Dachabdichtung und Hydroisolation für dauerhaften Schutz vor Feuchtigkeit – mit bewährten Systemen von SOPREMA und Bauder.',
-    href: '/leistungen/abdichtung',
-    image: '/images/img-20250729-wa0057-1.jpg',
+      "Hochwertige Dachabdichtung und Hydroisolation für dauerhaften Schutz vor Feuchtigkeit – mit bewährten Systemen von SOPREMA und Bauder.",
+    href: "/leistungen/abdichtung",
+    image: "/images/img-20250729-wa0057-1.jpg",
   },
   {
-    title: 'Zimmerei',
+    title: "Zimmerei",
     description:
-      'Fachgerechte Holzkonstruktionen, Dachstühle und Sparrenwechsel vom erfahrenen Zimmermann – mit Konstruktionsholz nach deutschen Qualitätsstandards.',
-    href: '/leistungen/zimmerei',
-    image: '/images/img-20250729-wa0060-1.jpg',
+      "Fachgerechte Holzkonstruktionen, Dachstühle und Sparrenwechsel vom erfahrenen Zimmermann – mit Konstruktionsholz nach deutschen Qualitätsstandards.",
+    href: "/leistungen/zimmerei",
+    image: "/images/img-20250729-wa0060-1.jpg",
   },
   {
-    title: 'Dachentwässerung',
+    title: "Dachentwässerung",
     description:
-      'Installation und Wartung von Regenrinnen, Fallrohren und Entwässerungssystemen – von Lindab, Zambelli und Rheinzink für langlebige Funktion.',
-    href: '/leistungen/dachentwaesserung',
-    image: '/images/img-20250729-wa0066-1.jpg',
+      "Installation und Wartung von Regenrinnen, Fallrohren und Entwässerungssystemen – von Lindab, Zambelli und Rheinzink für langlebige Funktion.",
+    href: "/leistungen/dachentwaesserung",
+    image: "/images/img-20250729-wa0066-1.jpg",
   },
   {
-    title: 'Dachausbau',
+    title: "Dachausbau",
     description:
-      'Neuer Wohnraum durch professionelle Mansardenausbauten und Dachgeschoss­ausbau – von der Planung bis zur Fertigstellung.',
-    href: '/leistungen/dachausbau',
-    image: '/images/whatsapp-image-2025-07-29-at-19.jpg',
+      "Neuer Wohnraum durch professionelle Mansardenausbauten und Dachgeschoss­ausbau – von der Planung bis zur Fertigstellung.",
+    href: "/leistungen/dachausbau",
+    image: "/images/whatsapp-image-2025-07-29-at-19.jpg",
   },
   {
-    title: 'Dachisolierung',
+    title: "Dachisolierung",
     description:
-      'Energieeffiziente Wärmedämmung mit ISOVER, Rockwool und pro clima. Sparen Sie bis zu 30 % Heizkosten und verbessern Sie Ihr Wohnklima.',
-    href: '/leistungen/dachisolierung',
-    image: '/images/img-20250729-wa0056-1.jpg',
+      "Energieeffiziente Wärmedämmung mit ISOVER, Rockwool und pro clima. Sparen Sie bis zu 30 % Heizkosten und verbessern Sie Ihr Wohnklima.",
+    href: "/leistungen/dachisolierung",
+    image: "/images/img-20250729-wa0056-1.jpg",
   },
   {
-    title: 'Dachfenster',
+    title: "Dachfenster",
     description:
-      'Einbau und Austausch von Dachfenstern für mehr Licht und bessere Belüftung. Zertifizierter Partner für VELUX, Roto und Fakro.',
-    href: '/leistungen/dachfenster',
-    image: '/images/img-20250729-wa0053-1.jpg',
+      "Einbau und Austausch von Dachfenstern für mehr Licht und bessere Belüftung. Zertifizierter Partner für VELUX, Roto und Fakro.",
+    href: "/leistungen/dachfenster",
+    image: "/images/img-20250729-wa0053-1.jpg",
   },
   {
-    title: 'Schornstein',
+    title: "Schornstein",
     description:
-      'Schornsteinsanierung, Verkleidung und Abdichtung für sicheren Betrieb – mit hochwertigen Materialien für jahrzehntelange Haltbarkeit.',
-    href: '/leistungen/schornstein',
-    image: '/images/22.jpg',
+      "Schornsteinsanierung, Verkleidung und Abdichtung für sicheren Betrieb – mit hochwertigen Materialien für jahrzehntelange Haltbarkeit.",
+    href: "/leistungen/schornstein",
+    image: "/images/22.jpg",
   },
 ];
 
 const benefits = [
   {
     icon: ShieldCheck,
-    title: 'Qualitätsgarantie',
+    title: "Qualitätsgarantie",
     description:
-      'Erstklassige Arbeit mit langfristiger Garantie auf alle Leistungen. Ihre Zufriedenheit ist unser Maßstab.',
+      "Erstklassige Arbeit mit langfristiger Garantie auf alle Leistungen. Ihre Zufriedenheit ist unser Maßstab.",
   },
   {
     icon: Clock,
-    title: 'Schneller Service',
+    title: "Schneller Service",
     description:
-      'Flexible Terminplanung und zügige Ausführung. Bei Notfällen sind wir 24/7 für Sie da.',
+      "Flexible Terminplanung und zügige Ausführung. Bei Notfällen sind wir 24/7 für Sie da.",
   },
   {
     icon: Award,
-    title: 'Meisterbetrieb',
+    title: "Meisterbetrieb",
     description:
-      'Qualifizierte Fachkräfte mit jahrelanger Erfahrung und regelmäßigen Fortbildungen für beste Ergebnisse.',
+      "Qualifizierte Fachkräfte mit jahrelanger Erfahrung und regelmäßigen Fortbildungen für beste Ergebnisse.",
   },
 ];
 
 const partners = [
-  { name: 'Braas', description: 'Premium Dachziegel' },
-  { name: 'Creaton', description: 'Hochwertige Dachsteine' },
-  { name: 'VELUX', description: 'Dachfenster-Spezialist' },
-  { name: 'ISOVER', description: 'Dämmstoffe' },
-  { name: 'Rheinzink', description: 'Dachentwässerung' },
-  { name: 'pro clima', description: 'Luftdichtung' },
+  { name: "Braas", description: "Premium Dachziegel" },
+  { name: "Creaton", description: "Hochwertige Dachsteine" },
+  { name: "VELUX", description: "Dachfenster-Spezialist" },
+  { name: "ISOVER", description: "Dämmstoffe" },
+  { name: "Rheinzink", description: "Dachentwässerung" },
+  { name: "pro clima", description: "Luftdichtung" },
 ];
 
 const trustStats = [
-  { value: 500, suffix: '+', label: 'Projekte umgesetzt' },
-  { value: 15, suffix: '+', label: 'Jahre Erfahrung' },
-  { value: 100, suffix: '%', label: 'Qualitätsgarantie' },
-  { value: 24, suffix: 'h', label: 'Notdienst' },
+  { value: 500, suffix: "+", label: "Projekte umgesetzt" },
+  { value: 15, suffix: "+", label: "Jahre Erfahrung" },
+  { value: 100, suffix: "%", label: "Qualitätsgarantie" },
+  { value: 24, suffix: "h", label: "Notdienst" },
 ];
 
 const faqItems = [
   {
-    question: 'In welchem Umkreis arbeitet Dachbau Pro?',
+    question: "In welchem Umkreis arbeitet Dachbau Pro?",
     answer:
-      'Wir sind vor allem in Wesseling, Köln, Bonn, Brühl, Hürth, Frechen, Pulheim, Bergheim, Erftstadt, Troisdorf, Siegburg und Bornheim im Einsatz. Im Umkreis von Wesseling ist die Anfahrt für Sie kostenlos. Ihren Ort nicht gefunden? Rufen Sie uns gerne an – wir sind flexibel.',
+      "Wir sind vor allem in Wesseling, Köln, Bonn, Brühl, Hürth, Frechen, Pulheim, Bergheim, Erftstadt, Troisdorf, Siegburg und Bornheim im Einsatz. Im Umkreis von Wesseling ist die Anfahrt für Sie kostenlos. Ihren Ort nicht gefunden? Rufen Sie uns gerne an – wir sind flexibel.",
   },
   {
-    question: 'Wie schnell sind Sie bei einem Sturmschaden vor Ort?',
+    question: "Wie schnell sind Sie bei einem Sturmschaden vor Ort?",
     answer:
-      'Bei akuten Sturmschäden oder undichten Dächern rücken wir in unserem Kerngebiet meist innerhalb von 60 bis 90 Minuten aus. Rufen Sie unseren 24/7-Notdienst an – wir sichern die Schadstelle provisorisch und erstellen direkt vor Ort einen Sanierungsvorschlag.',
+      "Bei akuten Sturmschäden oder undichten Dächern rücken wir in unserem Kerngebiet meist innerhalb von 60 bis 90 Minuten aus. Rufen Sie unseren 24/7-Notdienst an – wir sichern die Schadstelle provisorisch und erstellen direkt vor Ort einen Sanierungsvorschlag.",
   },
   {
-    question: 'Wie viel kostet eine neue Dacheindeckung?',
+    question: "Wie viel kostet eine neue Dacheindeckung?",
     answer:
-      'Die Kosten hängen von Dachfläche, Neigung, gewähltem Material (z. B. Ton- oder Betondachstein), Dämmung und Zustand des Dachstuhls ab. Als grobe Orientierung: 80–180 €/m² für die komplette Neueindeckung inklusive Material und Arbeit. Wir erstellen Ihnen nach einer kostenlosen Vor-Ort-Besichtigung ein transparentes Festpreisangebot.',
+      "Die Kosten hängen von Dachfläche, Neigung, gewähltem Material (z. B. Ton- oder Betondachstein), Dämmung und Zustand des Dachstuhls ab. Als grobe Orientierung: 80–180 €/m² für die komplette Neueindeckung inklusive Material und Arbeit. Wir erstellen Ihnen nach einer kostenlosen Vor-Ort-Besichtigung ein transparentes Festpreisangebot.",
   },
   {
-    question: 'Welche Materialien verwenden Sie?',
+    question: "Welche Materialien verwenden Sie?",
     answer:
-      'Ausschließlich Premium-Produkte deutscher Hersteller: Dachziegel von Braas, Creaton und Nelskamp, Dachfenster von VELUX, Roto und Fakro, Dämmstoffe von ISOVER, Rockwool und pro clima sowie Entwässerungssysteme von Rheinzink, Lindab und Zambelli. So garantieren wir Langlebigkeit und Herstellergarantie.',
+      "Ausschließlich Premium-Produkte deutscher Hersteller: Dachziegel von Braas, Creaton und Nelskamp, Dachfenster von VELUX, Roto und Fakro, Dämmstoffe von ISOVER, Rockwool und pro clima sowie Entwässerungssysteme von Rheinzink, Lindab und Zambelli. So garantieren wir Langlebigkeit und Herstellergarantie.",
   },
   {
-    question: 'Ist die Beratung und das Angebot wirklich kostenlos?',
+    question: "Ist die Beratung und das Angebot wirklich kostenlos?",
     answer:
-      'Ja. Erstberatung, Besichtigung und Angebotserstellung sind 100 % unverbindlich und kostenlos – ohne versteckte Kosten. Sie entscheiden erst nach Prüfung des detaillierten Angebots, ob Sie uns beauftragen möchten.',
+      "Ja. Erstberatung, Besichtigung und Angebotserstellung sind 100 % unverbindlich und kostenlos – ohne versteckte Kosten. Sie entscheiden erst nach Prüfung des detaillierten Angebots, ob Sie uns beauftragen möchten.",
   },
   {
-    question: 'Übernehmen Sie auch die Kommunikation mit der Versicherung?',
+    question: "Übernehmen Sie auch die Kommunikation mit der Versicherung?",
     answer:
-      'Bei Sturm-, Hagel- oder Schneelastschäden dokumentieren wir den Schaden fotografisch, erstellen einen fachlich fundierten Kostenvoranschlag und unterstützen Sie bei der Kommunikation mit Ihrer Gebäudeversicherung.',
+      "Bei Sturm-, Hagel- oder Schneelastschäden dokumentieren wir den Schaden fotografisch, erstellen einen fachlich fundierten Kostenvoranschlag und unterstützen Sie bei der Kommunikation mit Ihrer Gebäudeversicherung.",
   },
 ];
 
@@ -193,14 +193,17 @@ export default function HomePage() {
             <div className="lg:col-span-7">
               <Reveal>
                 <span className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-primary-foreground backdrop-blur">
-                  <Sparkles className="h-3.5 w-3.5 text-primary" aria-hidden="true" />
+                  <Sparkles
+                    className="h-3.5 w-3.5 text-primary"
+                    aria-hidden="true"
+                  />
                   Dachdecker-Meisterbetrieb · Wesseling
                 </span>
               </Reveal>
 
               <Reveal delay={0.06}>
                 <h1 className="mt-6 text-balance font-display text-hero font-bold leading-[1.02] tracking-tight">
-                  Ihr Dach.{' '}
+                  Ihr Dach.{" "}
                   <span className="text-gradient-brand">In Meisterhand.</span>
                 </h1>
               </Reveal>
@@ -208,9 +211,9 @@ export default function HomePage() {
               <Reveal delay={0.12}>
                 <p className="mt-6 max-w-2xl text-lead text-pretty text-secondary-foreground/80">
                   Dachmontage, Reparatur, Abdichtung und 24 h Notdienst in
-                  Wesseling, Köln, Bonn und Umgebung. Wir arbeiten ausschließlich
-                  mit Premium-Materialien deutscher Hersteller – für Dächer, die
-                  Generationen überdauern.
+                  Wesseling, Köln, Bonn und Umgebung. Wir arbeiten
+                  ausschließlich mit Premium-Materialien deutscher Hersteller –
+                  für Dächer, die Generationen überdauern.
                 </p>
               </Reveal>
 
@@ -243,10 +246,10 @@ export default function HomePage() {
               <Reveal delay={0.24}>
                 <ul className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-secondary-foreground/80">
                   {[
-                    'Kostenlose Anfahrt im Umkreis',
-                    'Faire & transparente Preise',
-                    'Deutsche Premium-Materialien',
-                    'Schnelle Terminvergabe',
+                    "Kostenlose Anfahrt im Umkreis",
+                    "Faire & transparente Preise",
+                    "Deutsche Premium-Materialien",
+                    "Schnelle Terminvergabe",
                   ].map((item) => (
                     <li key={item} className="flex items-center gap-2">
                       <CheckCircle2
@@ -421,7 +424,11 @@ export default function HomePage() {
 
             <Reveal delay={0.1}>
               <div className="mt-12 text-center">
-                <Button size="lg" asChild className="shadow-[var(--shadow-brand-sm)]">
+                <Button
+                  size="lg"
+                  asChild
+                  className="shadow-[var(--shadow-brand-sm)]"
+                >
                   <Link href="/leistungen">
                     Alle Leistungen im Detail
                     <ArrowRight className="ml-1 h-4 w-4" aria-hidden="true" />
@@ -474,12 +481,12 @@ export default function HomePage() {
                   </p>
                   <ul className="mt-6 space-y-3">
                     {[
-                      'Kostenlose Beratung und detaillierte Angebotserstellung',
-                      'Qualifizierte und erfahrene Fachkräfte',
-                      'Ausschließlich Premium-Materialien deutscher Hersteller',
-                      'Termingerechte und saubere Ausführung',
-                      'Faire und transparente Preisgestaltung',
-                      'Umfassende Garantieleistungen',
+                      "Kostenlose Beratung und detaillierte Angebotserstellung",
+                      "Qualifizierte und erfahrene Fachkräfte",
+                      "Ausschließlich Premium-Materialien deutscher Hersteller",
+                      "Termingerechte und saubere Ausführung",
+                      "Faire und transparente Preisgestaltung",
+                      "Umfassende Garantieleistungen",
                     ].map((item) => (
                       <li key={item} className="flex items-start gap-3">
                         <CheckCircle2
@@ -539,18 +546,18 @@ export default function HomePage() {
                   {[
                     {
                       icon: Wrench,
-                      title: 'Notfall-Service',
-                      body: 'Bei Sturmschäden oder dringenden Reparaturen sind wir 24/7 für Sie da.',
+                      title: "Notfall-Service",
+                      body: "Bei Sturmschäden oder dringenden Reparaturen sind wir 24/7 für Sie da.",
                     },
                     {
                       icon: HomeIcon,
-                      title: 'Kostenlose Anfahrt',
-                      body: 'Im Umkreis von Wesseling berechnen wir keine Anfahrtskosten.',
+                      title: "Kostenlose Anfahrt",
+                      body: "Im Umkreis von Wesseling berechnen wir keine Anfahrtskosten.",
                     },
                     {
                       icon: Users,
-                      title: 'Meisterbetrieb',
-                      body: 'Erfahrene Fachkräfte mit fundierter handwerklicher Ausbildung.',
+                      title: "Meisterbetrieb",
+                      body: "Erfahrene Fachkräfte mit fundierter handwerklicher Ausbildung.",
                     },
                   ].map((item) => (
                     <div
@@ -605,36 +612,36 @@ export default function HomePage() {
               {[
                 {
                   icon: Phone,
-                  title: 'Telefon',
-                  subtitle: 'Mo–Fr: 7:00–18:00 Uhr',
+                  title: "Telefon",
+                  subtitle: "Mo–Fr: 7:00–18:00 Uhr",
                   content: SITE.phone,
                   href: SITE.phoneHref,
                 },
                 {
                   icon: Mail,
-                  title: 'E-Mail',
-                  subtitle: 'Antwort innerhalb 24 h',
+                  title: "E-Mail",
+                  subtitle: "Antwort innerhalb 24 h",
                   content: SITE.email,
                   href: `mailto:${SITE.email}`,
                 },
                 {
                   icon: MapPin,
-                  title: 'Adresse',
-                  subtitle: 'Unser Standort',
-                  content: `${SITE.address.street}, ${SITE.address.postalCode} ${SITE.address.city}`,
-                  href: `https://maps.google.com/?q=${encodeURIComponent(
-                    `${SITE.address.street}, ${SITE.address.postalCode} ${SITE.address.city}`,
-                  )}`,
+                  title: "Adresse",
+                  subtitle: "Unser Standort",
+                  content: "Otto-Hahn-Straße 30, 50354 Hürth",
+                  href: "https://maps.google.com/?q=Otto-Hahn-Straße%2030,%2050354%20Hürth",
                 },
               ].map((card) => (
                 <StaggerItem key={card.title}>
                   <HoverCard>
                     <a
                       href={card.href}
-                      target={card.href.startsWith('http') ? '_blank' : undefined}
+                      target={
+                        card.href.startsWith("http") ? "_blank" : undefined
+                      }
                       rel={
-                        card.href.startsWith('http')
-                          ? 'noopener noreferrer'
+                        card.href.startsWith("http")
+                          ? "noopener noreferrer"
                           : undefined
                       }
                       className="group relative block h-full overflow-hidden rounded-2xl border border-border bg-card p-6 text-center transition-colors hover:border-primary/50 hover:shadow-[var(--shadow-brand-sm)]"
@@ -675,8 +682,8 @@ export default function HomePage() {
                 Bereit für Ihr Dachprojekt?
               </h2>
               <p className="mx-auto mt-4 max-w-2xl text-primary-foreground/90 leading-relaxed">
-                Kontaktieren Sie uns noch heute für eine kostenlose Beratung
-                und ein unverbindliches Angebot.
+                Kontaktieren Sie uns noch heute für eine kostenlose Beratung und
+                ein unverbindliches Angebot.
               </p>
               <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
                 <Button size="lg" variant="secondary" asChild>

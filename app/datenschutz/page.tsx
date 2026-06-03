@@ -314,6 +314,52 @@ export default function DatenschutzPage() {
                 </a>
                 .
               </p>
+              <h3 className="mt-6 text-lg font-semibold text-foreground">
+                Google Ads / Google Tag
+              </h3>
+              <p className="mt-4 text-muted-foreground">
+                Diese Website nutzt Google Ads Conversion Tracking (Google Tag),
+                um die Wirksamkeit unserer Werbekampagnen zu messen. Anbieter
+                ist die Google Ireland Limited, Gordon House, Barrow Street,
+                Dublin 4, Irland. Google kann dabei Cookies setzen und
+                Nutzungsdaten (z. B. IP-Adresse, Geräteinformationen,
+                besuchte Seiten) verarbeiten, um Conversions zu erfassen und
+                Anzeigen zu optimieren.
+              </p>
+              <p className="mt-2 text-muted-foreground">
+                Die Verarbeitung erfolgt auf Grundlage Ihrer Einwilligung
+                gemäß Art. 6 Abs. 1 lit. a DSGVO sowie § 25 Abs. 1 TTDSG
+                (Speicherung von oder Zugriff auf Informationen in Ihrem
+                Endgerät). Sie können Ihre Einwilligung jederzeit widerrufen.
+                Weitere Informationen finden Sie in der{' '}
+                <a
+                  href="https://policies.google.com/privacy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary hover:underline"
+                >
+                  Datenschutzerklärung von Google
+                </a>{' '}
+                sowie unter{' '}
+                <a
+                  href="https://policies.google.com/technologies/ads"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary hover:underline"
+                >
+                  Google Ads-Datenschutz
+                </a>
+                . Sie können personalisierte Werbung in den{' '}
+                <a
+                  href="https://adssettings.google.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary hover:underline"
+                >
+                  Google Ads-Einstellungen
+                </a>{' '}
+                deaktivieren.
+              </p>
 
               <h2 className="mt-8 text-xl font-semibold text-foreground">
                 6. SSL- bzw. TLS-Verschlüsselung
@@ -332,7 +378,7 @@ export default function DatenschutzPage() {
               </p>
 
               <p className="mt-8 text-sm text-muted-foreground">
-                Stand: Januar 2026
+                Stand: Juni 2026
               </p>
             </div>
           </div>

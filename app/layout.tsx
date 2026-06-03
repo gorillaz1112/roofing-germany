@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { ScrollToTop } from "@/components/scroll-to-top";
+import { GoogleAdsTag } from "@/components/analytics/google-ads";
 import { UmamiAnalytics } from "@/components/analytics/umami";
 import {
   organizationJsonLd,
@@ -149,6 +150,7 @@ export default function RootLayout({
         {children}
         <Analytics />
         <UmamiAnalytics />
+        <GoogleAdsTag />
       </body>
     </html>
   );
